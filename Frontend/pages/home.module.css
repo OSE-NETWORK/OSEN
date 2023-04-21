@@ -1,0 +1,29 @@
+/* home.module.css */
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .title {
+    font-size:4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle styles */
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description styles */
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
