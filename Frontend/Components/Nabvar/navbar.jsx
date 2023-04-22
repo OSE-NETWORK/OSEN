@@ -13,7 +13,7 @@ function Navbar() {
       </div>
       <ul className={styles["nav-links"]}>
         <li>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="/About">About us</a>
