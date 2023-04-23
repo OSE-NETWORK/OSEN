@@ -1,0 +1,34 @@
+.about-container {
+    max-width: 800px;
+    margin: 20 auto;
+    padding: 2rem;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1rem;
+      margin: 10px auto;
+    }
+  
+    .about-container h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
