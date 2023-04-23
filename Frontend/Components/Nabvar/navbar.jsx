@@ -106,7 +106,7 @@ export default function Navbar() {
         <NavLink to="/">COMMUNITIES</NavLink>
       </div>
       <div className="w-9/12 flex justify-end items-center">
-        <button className="hideen md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
+        <button className=" hidden md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
           LOGIN
         </button>
 
