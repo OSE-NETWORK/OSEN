@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./hero.module.css";
-<<<<<<< HEAD
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 function Hero() {
   return (
@@ -140,7 +139,7 @@ function Hero() {
 //       </div>
 
 
-    </div>
+  
   );
 }
 
