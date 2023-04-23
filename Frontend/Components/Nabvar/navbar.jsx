@@ -40,7 +40,7 @@ export default function Navbar() {
     return (
         <nav className="flex  filter drop-shadow-md bg-white px-4 py-4 h-20  items-center ">
             <MobileNav open={open} setOpen={setOpen}/>
-            <div className="w-3/12 flex items-center">
+            <div className="flex w-3/12 flex items-center">
                 <a  className="text-4xl tracking-widest  font-semibold" href="/">  <h2>
           <span className='text-blue-800'>OS.D</span>ev
         </h2></a>
@@ -64,7 +64,7 @@ export default function Navbar() {
             <div className="w-9/12 flex justify-end items-center">
 
                
-            <button className=" md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
+            <button className="hidden md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
                   LOGIN
             </button>
                
