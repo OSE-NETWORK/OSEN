@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className={styles["about-container"]}>
+    <div className="">
       <h1>About us</h1>
       <p>
         At OS.Devcommunity, we believe that everyone, irrespective of their college or branch, technical or non-technical background, can make it big. We're a community of learners, where people come together to learn, grow, and thrive. Our mission is to provide hands-on training in various fields of computer science, and create an inclusive community that focuses on a learn-by-doing approach.
