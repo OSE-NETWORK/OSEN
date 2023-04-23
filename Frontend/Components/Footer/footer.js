@@ -11,7 +11,7 @@ function Footer() {
           <div className = "flex gap-2 justify-between max-md:flex-col max-md:text-center">   
             <div className = "">
               <h4 className = "text-3xl pb-4 font-bold font-title">
-                Meta
+                Dev . Connect
                 <span className = "text-blue-400">.eth</span>
               </h4>
               <p className = "text-gray-500 pb-2">Join 25,000+ others and never miss out our Latest Updates.</p>
@@ -27,7 +27,7 @@ function Footer() {
                 <ul className = "text-gray-500">
                   <li className = "pb-2 flex">
                     <BiChevronRight className = "relative text-blue-400" size = {25} />
-                    <span className = "hover:text-blue-400 cursor-pointer font-semibold duration-200">Meta.eth</span>
+                    <span className = "hover:text-blue-400 cursor-pointer font-semibold duration-200">Dev . Connect</span>
                   </li>
                   <li className = "pb-2 flex">
                     <BiChevronRight className = "relative text-blue-400" size = {25} />
@@ -60,7 +60,7 @@ function Footer() {
       </div>
 
       <div className = "bg-gray-600 text-gray-400 flex max-sm:flex-col justify-between items-center px-10 py-1 font-semibold text-center">
-        <div className = "text-base">© 2022-2023 Meta.eth™. All Rights Reserved.</div>
+        <div className = "text-base">© 2022-2023 Dev.Connect™. All Rights Reserved.</div>
         <div className = "flex justify-center items-center gap-4">
             <FaDribbble className = "text-xl cursor-pointer" />
             <FaFacebook className = "text-xl cursor-pointer" />
