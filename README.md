@@ -1,6 +1,6 @@
 ## To run the frontend
 ```
-$cd client
+$cd Frontend
 $npm install
 $npm start
 ```
