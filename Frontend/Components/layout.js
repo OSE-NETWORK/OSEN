@@ -6,13 +6,15 @@ import Hero from "./Hero/hero";
 import About from "./About/about";
 
 import Footer from "./Footer/footer";
+import Team  from  "./Team/team";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <About/> */}
+      <About/>
+      <Team/>
       {children}
       <Footer/>
     </>

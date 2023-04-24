@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./hero.module.css";
+// import styles from "./hero.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTelegram, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 function Hero() {
   return (
@@ -16,29 +18,35 @@ function Hero() {
           </a>
         </div>
       </div>
+      
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           OS . Dev community
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-          fugiat veniam occaecat fugiat aliqua.
+        This is a community  which provides free hands-on training in various
+         fields of computer science  and have an inclusive community focusing on a
+         learn by doing approach.
         </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a
-            href="#"
-            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Get started
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Learn more <span aria-hidden="true">→</span>
-          </a>
+        <div className="text-center">
+            
+            <div className="flex justify-center mt-12 space-x-4">
+              <a href="https://twitter.com/" className="text-green-600 hover:text-gray-700">
+                <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
+              </a>
+              <a href="https://www.linkedin.com/" className="text-green-600 hover:text-gray-700">
+                <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
+              </a>
+              <a href="https://github.com/" className="text-green-600 hover:text-gray-700">
+                <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
+              </a>
+              <a href="https://t.me/OS_Dev_Community" className="text-green-600 hover:text-gray-700">
+                <FontAwesomeIcon icon={faTelegram} className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-   
-    </div>
     <div className="relative isolate overflow-hidden bg-white-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -94,53 +102,13 @@ function Hero() {
      
     </div>
   </div>
+  </div>
   
-    // <div id = "Hero" className={styles.container}>
-    //   <h1 className={styles.title}>OS.Devcommunity</h1>
-    //   <h3 className={styles.subtitle}>--Grow together--</h3>
-    //   <p className={styles.description}>
-    //     This is a <span>community</span> which provides <span>free</span> hands-on training in various
-    //     fields of<span>computer science </span> and have an inclusive <span>community focusing on a
-    //     learn by doing approach.</span>
-    //   </p>
+   
+      
 
-    //   <label>
-    //   <input type="text" placeholder="your email" className={styles.input} />
-    //   <button>Join us</button>
-
-    //   </label>
-
-    // </div>
-    
-
-
-
-// function Hero() {
-//   return (
-//     <div id="Hero" className={styles.container}>
-//       <h1 className={styles.title}>OS.Devcommunity</h1>
-//       <h3 className={styles.subtitle}>--Grow together--</h3>
-//       <p className={styles.description}>
-//         This is a <span>community</span> which provides <span>free</span> hands-on training in various
-//         fields of <span>computer science</span> and have an inclusive <span>community focusing on a
-//         learn by doing approach.</span>
-//       </p>
-
-//       <label>
-//         <input type="text" placeholder="your email" className={styles.input} />
-//         <button className={styles.joinButton}>Join us</button>
-//       </label>
-
-//       <div className={styles.iconContainer}>
-//         <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
-//         <a href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
-//         <a href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i></a>
-//         <a href="https://github.com/"><i className="fab fa-github"></i></a>
-//       </div>
-
-
-  
   );
+  
 }
 
 export default Hero;
