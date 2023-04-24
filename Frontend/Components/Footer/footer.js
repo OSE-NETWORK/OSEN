@@ -27,7 +27,7 @@ function Footer() {
                 <ul className = "text-gray-500">
                   <li className = "pb-2 flex">
                     <BiChevronRight className = "relative text-blue-400" size = {25} />
-                    <span className = "hover:text-blue-400 cursor-pointer font-semibold duration-200">OS.Devcommunity</span>
+                    <span className = "hover:text-blue-400 cursor-pointer font-semibold duration-200">OS.Dev</span>
                   </li>
                   <li className = "pb-2 flex">
                     <BiChevronRight className = "relative text-blue-400" size = {25} />
