@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./hero.module.css";
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 function Hero() {
   return (
