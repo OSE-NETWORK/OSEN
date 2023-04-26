@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function NavLink({ to, children }) {
   return (
@@ -9,6 +10,12 @@ function NavLink({ to, children }) {
 }
 
 function MobileNav({ open, setOpen }) {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/auth/login');
+  }
+
   return (
     <div
   className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${
@@ -76,9 +83,10 @@ function MobileNav({ open, setOpen }) {
             }, 100)
           }
         >
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            LOGIN
-          </button>
+          
+ <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleClick}>
+          LOGIN
+        </button>
         </a>
       </div>
     </div>
@@ -87,6 +95,11 @@ function MobileNav({ open, setOpen }) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/auth/login');
+  }
   return (
     <nav className="flex sticky top-0 z-50 filter drop-shadow-md bg-white px-4 py-4 h-20  items-center ">
       <MobileNav open={open} setOpen={setOpen} />
@@ -106,7 +119,7 @@ export default function Navbar() {
         <NavLink to="/communities">COMMUNITIES</NavLink>
       </div>
       <div className="w-9/12 flex justify-end items-center">
-        <button className=" hidden md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleClick}>
           LOGIN
         </button>
 
