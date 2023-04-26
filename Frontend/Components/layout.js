@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <Hero />
-      {/* <About/> */}
+      <About/>
       {children}
       <Footer/>
     </>
