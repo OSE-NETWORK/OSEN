@@ -12,7 +12,8 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleClick(event) {
+    event.preventDefault();
     navigate('/auth/login');
   }
 
@@ -119,7 +120,7 @@ export default function Navbar() {
         <NavLink to="/communities">COMMUNITIES</NavLink>
       </div>
       <div className="w-9/12 flex justify-end items-center">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleClick}>
+      <button className="hidden sm:flex bg-blue-500 hover:bg-blue-700 text-white mr-12 font-bold py-2 px-4 rounded" onClick={handleClick}>
           LOGIN
         </button>
 
