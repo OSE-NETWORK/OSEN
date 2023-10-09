@@ -1,14 +1,27 @@
-## To run the frontend
+## 🚀 Setting up the project locally
+
+To run the Edu.dev locally, follow these steps:
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/OSE-NETWORK/OSEN.git
+ ```
+ 2. Navigate to the project directory:
+```bash
+cd OSEN
 ```
-$cd Frontend
-$npm install
-$npm start
+3. Node Re-versioning
+
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
-## To run the backend
+4. Install the dependencies:
+```bash
+npm install --legacy-peer-deps
 ```
-$cd server
-$npm install
-$nodemon app.js
+5. Start the development server:
+```bash
+npm run dev
 ```
-
+6. Access the dApp:
+Open your web browser and visit http://localhost:3000 to interact with the EduDev application.
