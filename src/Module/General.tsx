@@ -26,9 +26,9 @@ import { default as lyin } from './Assets/teami/lyin.jpg';
 
 // Importing all Team members images  from Assets
 
-import me from './Assets/teami/me.png';
+import me from './Assets/teami/Pic.jpeg';
 import moon from './Assets/teami/moon.png';
-import Ryah from './Assets/teami/Ryah.jpg';
+import Ryah from './Assets/teami/mh.png';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
@@ -47,11 +47,11 @@ const TOP_SECTION = {
 const SOCIALS = {
   instagram: 'https://www.instagram.com/limbohacks/',
   discord: 'https://chat.whatsapp.com/B7gpwHuWhRGHxFWm9ACrRp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  linkedin: '',
+  twitter: '',
+  devpost: '',
+  email: '',
+  mail: ''
 };
 
 const MIDDLE_SECTION = {
@@ -64,11 +64,11 @@ const MIDDLE_SECTION = {
 const FOOTER = {
   VOLUNTEERING_FORM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    src: ''
   },
   JOIN_TEAM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    src: ''
   },
   Privacy_policy: {
     required: true,
@@ -88,26 +88,26 @@ const FOOTER = {
  */
 
 const calenderStartingDate = {
-  month: 12,
-  year: 2021
+  month: 10,
+  year: 2023
 };
 
 const schedule = [
   {
-    day: '8-11-2021',
+    day: '20-10-2023',
     events: [
       {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
+        title: 'Intro to OSEN',
+        timings: '10 AM - 1 Pm',
         link: 'https://google.com'
       }
     ]
   },
   {
-    day: '5-12-2021',
+    day: '25-10-2023',
     events: [
       {
-        title: 'Intro to deep learning',
+        title: 'Intro to Git nd GitHub',
         timings: '12 AM - 1 Pm',
         link: 'https://google.com'
       },
@@ -119,35 +119,15 @@ const schedule = [
     ]
   },
   {
-    day: '3-12-2021',
+    day: '30-10-2023',
     events: [
       {
-        title: 'Intro to phycycology',
+        title: 'Sponsor session',
         timings: '12 AM - 1 Pm',
         link: 'https://google.com'
       }
     ]
   },
-  {
-    day: '1-12-2021',
-    events: [
-      {
-        title: 'Intro to deep learning',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  },
-  {
-    day: '1-1-2022',
-    events: [
-      {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  }
 ];
 
 /** ICON
@@ -175,39 +155,39 @@ const Prizeinfo = [
       icon: <i className=" second fas fa-4x fa-medal"></i>,
       type: 'overall Second',
       content:
-        'Second Overall prize will be given to the second best project of the hackathon'
+        'Second Overall prize will be given to the second best project of the contribution'
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
       type: 'Third Second',
       content:
-        'Best third overall project of the hackathon will win some awesome prizes'
+        'Best third overall contribution of the  will win some awesome prizes'
     }
   ],
   [
     //Array 2
     {
       icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'Best Solo',
+      type: 'Track 1',
       content:
-        'You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team'
+        'We have included 10 projects in various domains, and contributors can actively participate in these projects. The top contributor for each project will be rewarded with swag.'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
-      content: 'Your project will qualify for this category if atleast 50% '
+      type: ' Track 2',
+      content: 'Share your insights and knowledge by writing blogs on sponsor technologies. Top contributors from each sponsor will receive swag from their respective sponsors'
     },
     {
       icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: 'Best UI/UX',
-      content: 'Project with most creative designs will be UI/UX track'
+      type: 'Track 3 ',
+      content: 'Contributors are encouraged to build their own projects using sponsor technologies. The top contributors in this track will be rewarded with swag from the sponsor.'
     }
   ],
   [
     //Array 3
     {
       icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'Best Web App with Qoom',
+      type: 'Best Web App with Sponsors',
       content: 'Must use qoom in your project to win this category'
     },
     {
@@ -230,8 +210,8 @@ const TeamInfo = [
     {
       Name: 'Vikash Kumar Yadav',
       role: 'Founder',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
+      github: 'https://github.com/Vikash-8090-Yadav',
+      linkedin: 'https://www.linkedin.com/in/vikash-kumar-yadav-8090/',
       img: me
     },
     {
@@ -252,15 +232,22 @@ const TeamInfo = [
   [
     //Array 2
     {
-      Name: 'Lyanola',
-      role: 'Organizer',
+      Name: 'Suryanash Parajapti',
+      role: 'Community Manager',
       github: '',
       linkedin: '',
       img: lyin
     },
     {
-      Name: 'Zoheb',
-      role: 'Organizer',
+      Name: 'Abdul',
+      role: 'Desginer Lead',
+      github: '',
+      linkedin: '',
+      img: zoha
+    },
+    {
+      Name: 'Abdul',
+      role: 'Desginer Lead',
       github: '',
       linkedin: '',
       img: zoha

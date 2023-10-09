@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
@@ -137,14 +137,10 @@ const NAVBAR = ({}) => {
         />
       </nav>
 
-      <Switch>
-        <Route path="/blog" exact={true}>
-          <MdxContent />
-        </Route>
-        <Route path="/" exact={true}>
-          <HomePage />
-        </Route>
-      </Switch>
+      <Routes>
+      <Route path="/blog" element={<MdxContent />} />
+  <Route path="/" element={<HomePage />} />
+      </Routes>
     </Router>
   );
 };
