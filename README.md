@@ -21,7 +21,7 @@ npm install --legacy-peer-deps
 ```
 5. Start the development server:
 ```bash
-npm run dev
+npm run start
 ```
 6. Access the dApp:
 Open your web browser and visit http://localhost:3000 to interact with the EduDev application.
