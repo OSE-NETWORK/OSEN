@@ -27,6 +27,8 @@ import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern4.png';
 
+import { ProjectsHead, Project } from 'components/Projects/project';
+import { projects } from '../../Module/General';
 const SponsorGroup = (props, index) => {
   return (
     <Row key={index}>
@@ -39,6 +41,28 @@ const SponsorGroup = (props, index) => {
     </Row>
   );
 };
+
+//projects group
+
+const ProjectsGroup = (props, index) => {
+
+  return (
+    <section >
+      <div className='projectsContainer'>
+        {
+          projects.map((details, index) => {
+            return (
+
+              <Project projectName={details.projectName} owner={details.owner} src={details.src} domainList={details.domainList} />
+
+            )
+          })
+        }
+      </div>
+
+    </section>
+  );
+}
 
 // Prize group
 const PrizeGroup = (props, index) => {
@@ -83,7 +107,7 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -129,6 +153,14 @@ export default function HomePage() {
         <Row className="prizesection non-coding">
           <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
+        </Row>
+
+        {/* ********Projects here ***** */}
+        <Row className='projects section'>
+           <ProjectsHead />
+
+          <ProjectsGroup />
+
         </Row>
 
         {/* ********Sponsors here ***** */}

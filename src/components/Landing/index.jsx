@@ -14,6 +14,19 @@ const Btn = props => {
   );
 };
 
+const Project_btn = props =>{
+  return (
+     <a href={props.src} target='__blank'>
+    <button className={props.class}>
+     {props.type}
+      <div className="overlay-p">
+        <div className="overlay-text-p">{props.overlay}</div>
+      </div>
+    </button>
+     </a>
+  );
+};
+
 const About = () => {
   return (
     <div className="AboutMe">
@@ -57,5 +70,5 @@ const Myinfo = () => {
   );
 };
 
-export { Btn, Myinfo };
+export { Btn, Myinfo ,Project_btn};
 
