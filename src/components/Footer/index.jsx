@@ -3,7 +3,7 @@ import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
 import {Btn} from '../Landing/index.jsx';
 import cross from './assets/cross.svg';
 import DevPost from './assets/icons8-dev-post.svg';
-import Dis from './assets/icons8-discord.svg';
+import Dis from './assets/icons8-whatsapp-50.png';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
@@ -66,18 +66,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
-              <img src={Mail} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
               <img src={Twitter} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
-              <img src={DevPost} alt="" />
             </a>
           </div>
         </div>
