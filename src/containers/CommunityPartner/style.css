@@ -1,0 +1,23 @@
+.main__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img__name {
+  max-width: 190rem;
+  height: 70rem;
+  margin-top: 0rem;
+}
+.header {
+  font-size: 7rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
