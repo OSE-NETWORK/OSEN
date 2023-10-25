@@ -34,6 +34,7 @@ import vikash from './Assets/teami/vikash.jpeg' ;
 import sajal from './Assets/teami/sajal.jpeg';
 import yash from './Assets/teami/yash.png' ;
 import abdul from './Assets/teami/Abdul.png' ;
+import khushi from './Assets/teami/khushi.jpeg' ;
 
 const TOP_SECTION = {
   TITLE: 'Join  OSEN ',
@@ -245,9 +246,9 @@ const TeamInfo = [
     {
       Name: 'Khushi',
       role: 'Event Manager',
-      github: '',
-      linkedin: '',
-      img: Ryah
+      github: 'https://github.com/kanand2003',
+      linkedin: 'https://www.linkedin.com/in/khushi-anand-a5826122a/',
+      img: khushi
     },
     {
       Name: 'Abdul Kadir',
