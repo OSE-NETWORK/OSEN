@@ -5,9 +5,18 @@
   font-family: 'Montserrat', sans-serif;
   position: relative;
 }
+
+body{
+  overflow-x: hidden;
+}
 .mediaInfo {
   margin-top: 10vh;
   background-size: auto 100vh;
+}
+@media (max-width: 480px) {
+  .projectsContainer {
+    grid-template-columns: 1fr; 
+}
 }
 .color_sectiom {
   background-color: #121930;
@@ -28,7 +37,7 @@
 
 }
 
-@media (min-width: 480px) {
+@media (min-width: 340px) {
   .projectsContainer {
     grid-template-columns: 1fr; 
 }

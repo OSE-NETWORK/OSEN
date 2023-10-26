@@ -1,13 +1,13 @@
-import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {HashLink as Link} from 'react-router-hash-link';
+import { useEffect, useRef, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 
-import {MdxContent} from '../Mdx';
+import { MdxContent } from '../Mdx';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
 //   );
 // };
 
-const NAVBAR = ({}) => {
+const NAVBAR = ({ }) => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
@@ -112,6 +112,12 @@ const NAVBAR = ({}) => {
                 </Link>
               </li>
               <li>
+                <Link to={`#projects`}>
+                  <span className="links">projects </span>{' '}
+                </Link>
+              </li>
+              <li>
+
                 <Link to={`#sponsors`}>
                   <span className="links">sponsors </span>{' '}
                 </Link>
@@ -138,8 +144,8 @@ const NAVBAR = ({}) => {
       </nav>
 
       <Routes>
-      <Route path="/blog" element={<MdxContent />} />
-  <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<MdxContent />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>
   );

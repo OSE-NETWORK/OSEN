@@ -126,7 +126,32 @@ border-radius: 0px;
   border-radius: 0;
   border-bottom-left-radius:19px ;
   border-bottom-right-radius: 19px;
+  position: relative;
+  bottom: 0;
 }
+@media (min-width: 340px) {
+  .project_btn{
+   width: 350px;
+  }
+ }
+ @media (max-width: 480px) {
+  .project_btn{
+   width: 350px;
+  }
+ }
+ @media (min-width: 1000px) { 
+  .project_btn{
+    width: 480px;
+   }
+ }
+
+@media (min-width: 1345px) { 
+  .project_btn{
+    width: 480px;
+   }
+ }
+
+
 
 button:hover .overlay {
   width: 100%;
@@ -136,6 +161,7 @@ button:hover .overlay-p {
   width: 100%;
   left: 0;
 }
+
 
 @media (max-width: 1200px) {
   .AboutMe h2 {

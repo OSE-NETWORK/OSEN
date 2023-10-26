@@ -156,8 +156,7 @@ export default function HomePage() {
         </Row>
 
         {/* ********Projects here ***** */}
-        <Row className='projects section'>
-           <ProjectsHead />
+        <Row className='projects section' id="projects">           <ProjectsHead />
 
           <ProjectsGroup />
 

@@ -13,8 +13,42 @@
     border-bottom-right-radius: 19px;
     padding-top: 1rem;
     margin: 2rem;
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+@media (max-width: 480px) {
+    .project{
+     width: 350px;
+    }
+   }
+
+
+@media (min-width: 480px) {
+   .project{
+    width: 350px;
+   }
+  }
+
+  
+  @media (min-width: 1000px) { 
+    .project {
+        width: 480px;
+    }
+   }
+  
+  @media (min-width: 1345px) { 
+    .project {
+        width: 480px;
+
+    }
+   }
+  
+ 
+
 
 .ProjectDomain {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
