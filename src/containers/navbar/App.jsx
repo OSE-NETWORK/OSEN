@@ -1,13 +1,14 @@
-import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {HashLink as Link} from 'react-router-hash-link';
+import { useEffect, useRef, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
+import ProjectsPage from 'containers/Home/ProjectsPage';
 
-import {MdxContent} from '../Mdx';
+import { MdxContent } from '../Mdx';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -51,7 +52,7 @@ const Wrapper = styled.div`
 //   );
 // };
 
-const NAVBAR = ({}) => {
+const NAVBAR = ({ }) => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
@@ -97,27 +98,33 @@ const NAVBAR = ({}) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
-                <Link to={`#home`}>
+                <Link to={`/#home`}>
                   <span className="links">Home </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#faq`}>
+                <Link to={`/#faq`}>
                   <span className="links">FAQ </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#prizes`}>
+                <Link to={`/#prizes`}>
                   <span className="links">prizes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#sponsors`}>
+                <Link to={`/projects`}>
+                  <span className="links">projects </span>{' '}
+                </Link> 
+              </li>
+              <li>
+
+                <Link to={`/#sponsors`}>
                   <span className="links">sponsors </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
+                <Link to={`/#team`}>
                   <span className="links">team </span>{' '}
                 </Link>
               </li>
@@ -138,8 +145,9 @@ const NAVBAR = ({}) => {
       </nav>
 
       <Routes>
-      <Route path="/blog" element={<MdxContent />} />
-  <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<MdxContent />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path='/projects' element={<ProjectsPage/>}/>
       </Routes>
     </Router>
   );

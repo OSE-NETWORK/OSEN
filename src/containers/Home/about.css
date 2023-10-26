@@ -5,9 +5,18 @@
   font-family: 'Montserrat', sans-serif;
   position: relative;
 }
+
+body{
+  overflow-x: hidden;
+}
 .mediaInfo {
   margin-top: 10vh;
   background-size: auto 100vh;
+}
+@media (max-width: 480px) {
+  .projectsContainer {
+    grid-template-columns: 1fr; 
+}
 }
 .color_sectiom {
   background-color: #121930;
@@ -18,6 +27,36 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.projectsContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px;
+  margin-inline: auto;
+
+}
+
+@media (min-width: 340px) {
+  .projectsContainer {
+    grid-template-columns: 1fr; 
+}
+}
+
+@media (min-width: 1000px) { 
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+ }
+
+@media (min-width: 1345px) { 
+  .projectsContainer {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+ }
+
+ 
+
+
 
 h1 {
   text-align: center;

@@ -27,6 +27,8 @@ import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern4.png';
 
+import { ProjectsHead, Project } from 'components/Projects/project';
+import { projects } from '../../Module/General';
 const SponsorGroup = (props, index) => {
   return (
     <Row key={index}>
@@ -39,6 +41,9 @@ const SponsorGroup = (props, index) => {
     </Row>
   );
 };
+
+//projects group
+
 
 // Prize group
 const PrizeGroup = (props, index) => {
@@ -83,7 +88,7 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -131,6 +136,9 @@ export default function HomePage() {
           <h2>coming soon</h2>
         </Row>
 
+        {/* ********Projects here ***** */}
+      
+
         {/* ********Sponsors here ***** */}
 
         <Row className="sponsorSection" id="sponsors">
@@ -171,3 +179,4 @@ export default function HomePage() {
     </div>
   );
 }
+

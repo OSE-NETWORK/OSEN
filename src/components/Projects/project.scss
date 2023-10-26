@@ -1,0 +1,81 @@
+.phead {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+    margin-top: 15rem;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.project {
+    
+    text-align: start;
+    background-color: #F3EFFE;
+    width: 450px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+    padding-top: 1rem;
+    margin: 2rem;
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+
+}
+@media (max-width: 480px) {
+    .project{
+     width: 350px;
+    }
+   }
+
+
+@media (min-width: 480px) {
+   .project{
+    width: 350px;
+   }
+  }
+
+  
+  @media (min-width: 1000px) { 
+    .project {
+        width: 480px;
+    }
+   }
+  
+  @media (min-width: 1345px) { 
+    .project {
+        width: 480px;
+
+    }
+   }
+  
+ 
+
+
+.ProjectDomain {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: #6a63b7;
+    color: #FFFFFF;
+
+}
+
+.DomainBox {
+    display: flex;
+    padding: 2rem;
+}
+
+h3 {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-weight: 700;
+
+
+}
+
+p {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}

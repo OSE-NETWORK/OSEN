@@ -369,8 +369,65 @@ const frequentlyAskedQuestions = [
   ]
 ];
 
+const projects=
+[
+  {
+    "projectName":"Future.Webnet",
+    "owner":"Vikash",
+    "domainList":["web3"],
+    "src":`https://github.com/Vikash-8090-Yadav/Future.WebNet`
+  },
+  {
+    "projectName":"Solidity Pathshala",
+    "owner":"Vikash",
+    "domainList":["Solidity"],
+    "src":`https://github.com/Vikash-8090-Yadav/Solidity-Pathshala`
+  },
+  {
+    "projectName":"Moksh",
+    "owner":"Akshita Gupta",
+    "domainList":["Web Dev"],
+    "src":`https://github.com/akshitagupta15june/Moksh`
+  },
+  {
+    "projectName":"METAVERSE",
+    "owner":"Arpan",
+    "domainList":["Web3"],
+    "src":`https://github.com/apu52/METAVERSE`
+  },
+  {
+    "projectName":"NSCC",
+    "owner":"Unknown",
+    "domainList":["Web2"],
+    "src":`https://github.com/NSCC-BPIT/NSCC-BPIT-Website`
+  },
+  {
+    "projectName":"MemeGenerator",
+    "owner":"Avinash",
+    "domainList":["Web2"],
+    "src":`https://github.com/avinash201199/MemeGenerator`
+  },
+  {
+    "projectName":"Competitions-and-Programs-List",
+    "owner":"Avinash",
+    "domainList":["Web2"],
+    "src":`https://github.com/avinash201199/Competitions-and-Programs-List`
+  },
+  {
+    "projectName":"Your-Projects",
+    "owner":"Avinash",
+    "domainList":["Web2"],
+    "src":`https://github.com/avinash201199/Your-Projects`
+  },
+  {
+    "projectName":"DL-Simplified",
+    "owner":"Abhishek",
+    "domainList":["AI / ML"],
+    "src":`https://github.com/abhisheks008/DL-Simplified`
+  }
+]
 export {
   calenderStartingDate, FOOTER, frequentlyAskedQuestions, JudgesInfo, MIDDLE_SECTION, Prizeinfo, schedule, SOCIALS, sponsorLogos,
-  TeamInfo, TOP_SECTION
+  TeamInfo, TOP_SECTION, projects
 };
 
