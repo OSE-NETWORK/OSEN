@@ -26,10 +26,15 @@ import { default as lyin } from './Assets/teami/lyin.jpg';
 
 // Importing all Team members images  from Assets
 
-import me from './Assets/teami/Pic.jpeg';
+import me from './Assets/teami/me.png';
 import moon from './Assets/teami/moon.png';
-import Ryah from './Assets/teami/mh.png';
+import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
+import vikash from './Assets/teami/vikash.jpeg' ;
+import sajal from './Assets/teami/sajal.jpeg';
+import yash from './Assets/teami/yash.png' ;
+import abdul from './Assets/teami/Abdul.png' ;
+import khushi from './Assets/teami/khushi.jpeg' ;
 
 const TOP_SECTION = {
   TITLE: 'Join  OSEN ',
@@ -45,10 +50,10 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
+  instagram: 'https://www.instagram.com/ose_network/',
   discord: 'https://chat.whatsapp.com/B7gpwHuWhRGHxFWm9ACrRp',
-  linkedin: '',
-  twitter: '',
+  linkedin: 'https://www.linkedin.com/company/osenetwork',
+  twitter: 'https://www.twitter.com/osen_official',
   devpost: '',
   email: '',
   mail: ''
@@ -212,45 +217,45 @@ const TeamInfo = [
       role: 'Founder',
       github: 'https://github.com/Vikash-8090-Yadav',
       linkedin: 'https://www.linkedin.com/in/vikash-kumar-yadav-8090/',
-      img: me
+      img: vikash
     },
     {
       Name: 'Sajal Batra',
       role: 'Co-Founder',
-      github: '',
-      linkedin: '',
-      img: zoha
+      github: 'https://github.com/sajalbatra',
+      linkedin: 'https://www.linkedin.com/in/sajal-batra-95314a25b/',
+      img: sajal
     },
     {
-      Name: 'Mahak',
-      role: 'Community Manager',
-      github: '',
-      linkedin: '',
-      img: Ryah
+      Name: 'Yashpreet Singh',
+      role: 'Community Advocate',
+      github: 'https://github.com/yashpreet2707',
+      linkedin: 'https://linkedin.com/in/yashpreet2707',
+      img: yash
     }
   ],
   [
     //Array 2
+    // {
+    //   Name: 'Mahak',
+    //   role: 'Community Manager',
+    //   github: '',
+    //   linkedin: '',
+    //   img: Ryah
+    // },
     {
-      Name: 'Suryanash Parajapti',
-      role: 'Community Manager',
-      github: '',
-      linkedin: '',
-      img: lyin
+      Name: 'Khushi',
+      role: 'Event Manager',
+      github: 'https://github.com/kanand2003',
+      linkedin: 'https://www.linkedin.com/in/khushi-anand-a5826122a/',
+      img: khushi
     },
     {
-      Name: 'Abdul',
+      Name: 'Abdul Kadir',
       role: 'Desginer Lead',
-      github: '',
-      linkedin: '',
-      img: zoha
-    },
-    {
-      Name: 'Abdul',
-      role: 'Desginer Lead',
-      github: '',
-      linkedin: '',
-      img: zoha
+      github: 'https://github.com/AK3847',
+      linkedin: 'https://www.linkedin.com/in/abdul-kadir-14164a22b/',
+      img: abdul
     }
   ]
 ];
