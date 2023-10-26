@@ -1,4 +1,5 @@
 import { Project_btn } from '../Landing/index.jsx';
+import { projects } from 'Module/General';
 import './project.scss';
 
 function ProjectsHead() {
@@ -31,4 +32,25 @@ function ProjectsHead() {
     );
   }
 
-  export {ProjectsHead, Project};
+  function  ProjectsGroup  (props, index) {
+
+    return (
+      <section >
+        <div className='projectsContainer'>
+          {
+            projects.map((details, index) => {
+              return (
+  
+                <Project projectName={details.projectName} owner={details.owner} src={details.src} domainList={details.domainList} />
+  
+              )
+            })
+          }
+        </div>
+  
+      </section>
+    );
+  }
+  
+
+  export {ProjectsHead, Project,ProjectsGroup};

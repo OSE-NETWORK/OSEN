@@ -6,6 +6,7 @@ import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
+import ProjectsPage from 'containers/Home/ProjectsPage';
 
 import { MdxContent } from '../Mdx';
 
@@ -97,33 +98,33 @@ const NAVBAR = ({ }) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
-                <Link to={`#home`}>
+                <Link to={`/#home`}>
                   <span className="links">Home </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#faq`}>
+                <Link to={`/#faq`}>
                   <span className="links">FAQ </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#prizes`}>
+                <Link to={`/#prizes`}>
                   <span className="links">prizes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#projects`}>
+                <Link to={`/projects`}>
                   <span className="links">projects </span>{' '}
-                </Link>
+                </Link> 
               </li>
               <li>
 
-                <Link to={`#sponsors`}>
+                <Link to={`/#sponsors`}>
                   <span className="links">sponsors </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
+                <Link to={`/#team`}>
                   <span className="links">team </span>{' '}
                 </Link>
               </li>
@@ -146,6 +147,7 @@ const NAVBAR = ({ }) => {
       <Routes>
         <Route path="/blog" element={<MdxContent />} />
         <Route path="/" element={<HomePage />} />
+        <Route path='/projects' element={<ProjectsPage/>}/>
       </Routes>
     </Router>
   );

@@ -44,25 +44,6 @@ const SponsorGroup = (props, index) => {
 
 //projects group
 
-const ProjectsGroup = (props, index) => {
-
-  return (
-    <section >
-      <div className='projectsContainer'>
-        {
-          projects.map((details, index) => {
-            return (
-
-              <Project projectName={details.projectName} owner={details.owner} src={details.src} domainList={details.domainList} />
-
-            )
-          })
-        }
-      </div>
-
-    </section>
-  );
-}
 
 // Prize group
 const PrizeGroup = (props, index) => {
@@ -156,11 +137,7 @@ export default function HomePage() {
         </Row>
 
         {/* ********Projects here ***** */}
-        <Row className='projects section' id="projects">           <ProjectsHead />
-
-          <ProjectsGroup />
-
-        </Row>
+      
 
         {/* ********Sponsors here ***** */}
 
@@ -202,3 +179,4 @@ export default function HomePage() {
     </div>
   );
 }
+
